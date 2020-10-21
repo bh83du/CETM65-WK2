@@ -31,7 +31,7 @@ class Employee():
 '''
 Create a Sub Class of Employee for Temporary Employees
 '''
-
+# Need to add Decoraters and Properties tags.  Must be clearner way to do it.
 class Temporary(Employee):
 
     number_of_temp_emp = 0  # Class variable to allow tracking of number of Employees
@@ -68,7 +68,7 @@ class Temporary(Employee):
 '''
 Create a Sub Class of Employee for Permanent Employees
 '''
-
+# Need to add Decoraters and Properties tags.  Must be clearner way to do it.
 class Permanent(Employee):
 
     number_of_perm_emp = 0 # Class variable to allow tracking of number of Employees
