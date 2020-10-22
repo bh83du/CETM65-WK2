@@ -10,6 +10,10 @@ stuart=Permanent('Stuart Riding', '06/06/1975', 'E0002')
 stuart.annualsalary = 36000
 stuart.pensionplan = "Member"
 
+mike=Permanent('Micheal Myers', '07/05/1971', 'E0003')
+mike.annualsalary = 43000
+mike.pensionplan = "Member"
+
 #Program to access the data
 
 active = True
@@ -37,13 +41,17 @@ while active == True:
         print("Select your Employee:") # Select which Employee details you wish to see
         print("1. John Wall")
         print("2. Stuart Riding")
+        print("3. Michael Myers")
         selection = input("> ")
         if selection == "1":
             john.display() # Display the Employee's Personal Data.  Method from the Parent Class
             john.salary_info() # Display the Employee's Salary datat.  Method fromt he Sub Classe 
         elif selection == "2":
             stuart.display()  # Display the Employee's Personal Data.  Method from the Parent Class
-            stuart.salary_info() # Display the Employee's Salary datat.  Method fromt he Sub Classe 
+            stuart.salary_info() # Display the Employee's Salary datat.  Method from the Sub Class 
+        elif selection == "3":
+            mike.display()  # Display the Employee's Personal Data.  Method from the Parent Class
+            mike.salary_info() # Display the Employee's Salary datat.  Method from the Sub Class 
         else:
             print("Invalid ID.  Please try again.") # Invalid Employee entered.  Start Again
     else:
