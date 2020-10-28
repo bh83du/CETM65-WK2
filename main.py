@@ -1,5 +1,5 @@
 # Import classes from class.py file
-from class import Employee, Temporary, Permanent
+from employee import Employee, Temporary, Permanent
 # Create an Employee   
 
 john=Temporary('John Wall', '19/06/1975', 'E0001')
